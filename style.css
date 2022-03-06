@@ -395,19 +395,27 @@ footer img {
 .container-hover {
   position: relative;
   width: 100%;
+  height: inherit;
 }
 
 .overlay {
   position: absolute;
+  display: flex;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  height: inherit;
   width: 100%;
+  margin-bottom: 35px;
   opacity: 0;
   transition: .5s ease;
   background-color: #000000;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-hover:hover .overlay {
@@ -415,13 +423,15 @@ footer img {
 }
 
 .text-overlay {
+  display:flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
   color: white;
   font-size: 20px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   text-align: center;
 }
 
