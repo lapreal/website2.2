@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang= "en">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="reset.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<link rel="stylesheet" href="venobox/venobox.css" />
+		<title>trio | lapreal designs</title>
+		<link rel="shortcut icon" type="image/icon" href="images/favicon.ico"/>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul>
+				<li><a href="index.html">WORK</a></li>
+				<br><br>
+				<li><a href="resume.html">RÉSUMÉ</a></li>
+				<br><br>
+				<li><a href="contact.html">CONNECT</a></li>
+			</ul>
+			<!---scripts for sidebar menu--->
+  		<script>
+  			function openNav() {
+
+						document.getElementById("mySidenav").style.width = "75%";
+  			}
+
+  			function closeNav() {
+  				document.getElementById("mySidenav").style.width = "0";
+  			}
+  		</script>
+			<!---end scripts--->
+		</div>
+        <header class="other-header">
+                <a href="index.html"><img class="home-logo" src="images/logo-black.png" alt="samantha lapreal prince logo"></a>
+								<i style="font-size:40px;cursor:pointer;color:black;padding:10px 0 10px 10px;position:absolute;right:10px;" onclick="openNav()">&#9776;</i>
+
+								 <nav class="other-nav">
+                    <ul>
+                         <li><a href="index.html">WORK</a></li>
+						 <li><a href="resume.html">RÉSUMÉ</a></li>
+						 <li><a href="contact.html">CONNECT</a></li>
+                     </ul>
+                </nav>
+            </div>
+        </header>
+		<main>
+			<div class="design-layout">
+			<h1>trio.</h1>
+				<div class="design-header">
+					<img src="images/trio1.png" alt="toothbrushes in toothbrush holder">
+				</div>
+				<p>
+					I set out to design a toothbrush holder that is easy to clean in a pinch.
+					After conducting user research on toothbrushes, I discovered one serious problem in holders:
+					They are really gross because users hate cleaning them. Users primarily brush their teeth at times when they are likely in a rush to get somewhere (to work or to sleep).
+				</p>
+				<p>
+					After asking users for feedback on these designs, using milled polystyrene models, I found the majority of users liked the size of the space saver concept (the one in the middle in the image below). I also found they did not like the idea of their toothbrush head laying down on any kind of surface. They did like the way the family caddy concept (the one on the left in the image below) held the brushes and the aesthics of the concept. I listened and combined the best of both worlds.
+				</p>
+			</div>
+				<div class="outer-grid">
+					<div class="grid"><a class="venobox" data-title="toothbrush holder statistic graphic" data-gall="myGallery" href="images/trio2.jpg"><img src="images/trio2-grid.jpg" alt="64% of toothbrush holders contain high levels of bacteria such as e. coli, staph, and mold"/></a></div>
+					<div class="grid"><a class="venobox" data-title="toothbrush holder ideation sketches" data-gall="myGallery" href="images/trio4.jpg"><img src="images/trio4-grid.jpg" alt="toothbrush holder ideation sketches"/></a></div>
+					<div class="grid"><a class="venobox" data-title="combining two design concepts into the final product" data-gall="myGallery" href="images/trio5.png"><img src="images/trio5-grid.jpg" alt="combining two design concepts into the final product"/></a></div>
+					<div class="grid"><a class="venobox" data-title="in-context product rendering" data-gall="myGallery" href="images/trio3.jpg"><img src="images/trio3-grid.jpg" alt="toothbrush holder on bathroom counter"/></a></div>
+				</div>
+		</main>
+		<footer>
+			<a href="https://www.linkedin.com/in/samanthalapreal/" target="_blank" rel="noopener noreferrer"> <img src="images/linkedin-icon.png" alt="linkedin website logo"></a>
+          	<a href="https://www.upwork.com/freelancers/~011b0a2984559fffdf"> <img src="images/upwork-icon.png" alt="upwork icon"></a>
+          	<a href="mailto:samanthalapreal@gmail.com"> <img src="images/email-icon.png" alt="email icon"></a>
+          	<a href="https://dribbble.com/lapreal" target="_blank" rel="noopener noreferrer"> <img src="images/dribbble-icon.png" alt="dribbble website logo"></a>
+            <p>copyright &#169; 2022 samantha lapreal prince</p>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+			<script type="text/javascript" src="venobox/venobox.js"></script>
+			<script>
+				$(document).ready(function(){
+					$('.venobox').venobox(); 
+				  });
+				</script>
+        </footer>
+	</body>
+</html>

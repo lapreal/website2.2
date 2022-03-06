@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang= "en">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="reset.css" rel="stylesheet">
+	    	<link href="style.css" rel="stylesheet">
+        <title>contact | lapreal designs</title>
+        <link rel="shortcut icon" type="image/icon" href="images/favicon.ico"/>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+
+              // get the form elements defined in your form HTML above
+
+              var form = document.getElementById("my-form");
+              // var button = document.getElementById("my-form-button");
+              var status = document.getElementById("status");
+
+              // Success and Error functions for after the form is submitted
+
+              function success() {
+                form.reset();
+                status.classList.add('success');
+                status.innerHTML = "Thanks!";
+              }
+
+              function error() {
+                status.classList.add('error');
+                status.innerHTML = "Oops! There was a problem.";
+              }
+
+              // handle the form submission event
+
+              form.addEventListener("submit", function(ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+              });
+            });
+
+            // helper function for sending an AJAX request
+
+            function ajax(method, url, data, success, error) {
+              var xhr = new XMLHttpRequest();
+              xhr.open(method, url);
+              xhr.setRequestHeader("Accept", "application/json");
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                  success(xhr.response, xhr.responseType);
+                } else {
+                  error(xhr.status, xhr.response, xhr.responseType);
+                }
+              };
+              xhr.send(data);
+            }
+          </script>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<br><br>
+				<li><a href="resume.html">RÉSUMÉ</a></li>
+				<br><br>
+				<li><a href="contact.html">CONNECT</a></li>
+			</ul>
+			<!---scripts for sidebar menu--->
+  		<script>
+  			function openNav() {
+
+						document.getElementById("mySidenav").style.width = "75%";
+  			}
+
+  			function closeNav() {
+  				document.getElementById("mySidenav").style.width = "0";
+  			}
+  		</script>
+			<!---end scripts--->
+		</div>
+        <header class="other-header">
+
+                <a href="index.html"><img class="home-logo" src="images/logo-black.png" alt="samantha lapreal prince logo"></a>
+								<i style="font-size:40px;cursor:pointer;color:black;padding:10px 0 10px 10px;position:absolute;right:10px;" onclick="openNav()">&#9776;</i>
+
+								 <nav class="other-nav">
+                    <ul>
+                         <li><a href="index.html">WORK</a></li>
+                         <li><a href="resume.html">RÉSUMÉ</a></li>
+                         <li><a href="contact.html">CONNECT</a></li>
+                     </ul>
+                </nav>
+            </div>
+        </header>
+         <main class="contact">
+            <h1>
+                connect.
+            </h1>
+            <div class="work-container">
+              <div class="work"><p>salt lake city, ut</p></div>
+              <div class="work"><p>samanthalapreal@gmail.com</p></div>
+          </div>
+
+         </main>
+         <footer>
+          <a href="https://www.linkedin.com/in/samanthalapreal/" target="_blank" rel="noopener noreferrer"> <img src="images/linkedin-icon.png" alt="linkedin website logo"></a>
+          <a href="https://www.upwork.com/freelancers/~011b0a2984559fffdf"> <img src="images/upwork-icon.png" alt="upwork icon"></a>
+          <a href="mailto:samanthalapreal@gmail.com"> <img src="images/email-icon.png" alt="email icon"></a>
+          <a href="https://dribbble.com/lapreal" target="_blank" rel="noopener noreferrer"> <img src="images/dribbble-icon.png" alt="dribbble website logo"></a>
+                <p>copyright &#169; 2022 samantha lapreal prince</p>
+            </footer>
+	</body>
+</html>

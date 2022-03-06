@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang= "en">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="reset.css" rel="stylesheet">
+	    	<link href="style.css" rel="stylesheet">
+        <title>contact | lapreal designs</title>
+        <link rel="shortcut icon" type="image/icon" href="images/favicon.ico"/>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+
+              // get the form elements defined in your form HTML above
+
+              var form = document.getElementById("my-form");
+              // var button = document.getElementById("my-form-button");
+              var status = document.getElementById("status");
+
+              // Success and Error functions for after the form is submitted
+
+              function success() {
+                form.reset();
+                status.classList.add('success');
+                status.innerHTML = "Thanks!";
+              }
+
+              function error() {
+                status.classList.add('error');
+                status.innerHTML = "Oops! There was a problem.";
+              }
+
+              // handle the form submission event
+
+              form.addEventListener("submit", function(ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+              });
+            });
+
+            // helper function for sending an AJAX request
+
+            function ajax(method, url, data, success, error) {
+              var xhr = new XMLHttpRequest();
+              xhr.open(method, url);
+              xhr.setRequestHeader("Accept", "application/json");
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                  success(xhr.response, xhr.responseType);
+                } else {
+                  error(xhr.status, xhr.response, xhr.responseType);
+                }
+              };
+              xhr.send(data);
+            }
+          </script>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<br><br>
+				<li><a href="work.html">WORK</a></li>
+				<br><br>
+				<li><a href="resume.html">RÉSUMÉ</a></li>
+				<br><br>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<!---scripts for sidebar menu--->
+  		<script>
+  			function openNav() {
+
+						document.getElementById("mySidenav").style.width = "75%";
+  			}
+
+  			function closeNav() {
+  				document.getElementById("mySidenav").style.width = "0";
+  			}
+  		</script>
+			<!---end scripts--->
+		</div>
+        <header class="other-header">
+
+                <a href="index.html"><img class="home-logo" src="images/logo-black.png" alt="samantha lapreal prince logo"></a>
+								<i style="font-size:40px;cursor:pointer;color:black;padding:10px 0 10px 10px;" onclick="openNav()">&#9776;</i>
+
+								 <nav class="other-nav">
+                    <ul>
+                         <li><a href="index.html">HOME</a></li>
+                         <li><a href="work.html">WORK</a></li>
+                         <li><a href="resume.html">RÉSUMÉ</a></li>
+                         <li><a href="contact.html">CONTACT</a></li>
+                     </ul>
+                </nav>
+            </div>
+        </header>
+         <main class="contact">
+            <h1>
+                contact.
+            </h1>
+        <section class="contact-form">
+            <div class="container">
+                <form action="https://formspree.io/f/mpzojnea" method="POST" id="my-form">
+                    <div class="form-group">
+                        <label for="firstname">first name</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">last name</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button type="submit">send</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
+         </main>
+         <footer>
+          <a href="https://www.linkedin.com/in/samanthalapreal/"> <img src="images/linkedin-icon.png" alt="linkedin website logo"></a>
+          <a href="mailto:samanthalapreal@gmail.com"> <img src="images/email-icon.png" alt="email icon"> </a>
+          <p>copyright &#169; 2020 samantha lapreal prince</p>
+      </footer>
+	</body>
+</html>
