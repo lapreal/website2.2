@@ -18,6 +18,10 @@
     src: url(fonts/avenir-medium.otf) format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
 }
@@ -138,7 +142,6 @@ h1 {
   background-color: white;
   overflow-x: hidden;
   transition: 0.3s;
-  transition
 }
 
 .sidenav a {
@@ -421,8 +424,23 @@ footer img {
 .container-hover:hover .overlay {
   opacity: .5;
 }
+.container-hover:hover .text-overlay {
+  opacity: 1;
+}
 
 .text-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: 100%;
+  margin-bottom: 35px;
+  transition: .5s ease;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
   display:flex;
   justify-content: center;
   align-self: center;
@@ -433,6 +451,7 @@ footer img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
   text-align: center;
+  opacity: 0;
 }
 
 @media only screen and (min-width: 300px) {
