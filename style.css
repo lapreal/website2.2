@@ -25,7 +25,10 @@ html {
 html, body {
     height: 100%;
 }
-
+.bottom-links a {
+text-decoration: underline;
+color: black;
+}
 body {
     font-family: avenir, sans-serif;
 }
@@ -43,6 +46,16 @@ body {
     color: #6D6E71;
 }
 
+.work-container p {
+  display: flex;
+  justify-content: center;
+  font-family: avenir, sans-serif;
+  font-size: 12pt;
+  margin: auto;
+  color: gray;
+  line-height: 20pt;
+  padding-bottom: 80px;
+}
 .home-header {
   display: flex;
   flex-direction:row;
@@ -72,20 +85,21 @@ body {
 }
 .home-nav a {
     text-decoration: none;
-    font-family: avenir, sans-serif;
+    font-family: avenir-medium, sans-serif;
     font-size: 11pt;
-    color: white;
+    color: black;
 }
 
 .home-header h2 {
-    padding: 12px;
-    font-family: avenir, sans-serif;
-    letter-spacing: 3pt;
-    line-height: 40px;
-    font-size: 12pt;
-    color: white;
-    width: 700px; 
-    margin-left: 60px;
+  margin-top: 125px;
+  font-size: 70pt;
+  line-height: 70px;
+  width: 400px;
+  letter-spacing: 1.5pt;
+  padding: 12px;
+  font-family: avenir-semi-bold, sans-serif;
+  color: black;
+  margin-left: 60px;
 }
 
 .home-header div {
@@ -121,7 +135,7 @@ h1 {
     font-family: avenir-semi-bold, sans-serif;
     font-size: 20pt;
     color: black;
-    padding: 60px 20px 60px 20px;
+    padding: 40px;
     text-align: center;
     position: relative;
 }
@@ -347,7 +361,7 @@ blockquote {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 100px 50px 100px;
+    padding: 50px 150px 50px 150px;
 }
 
 .work a {
@@ -466,14 +480,15 @@ footer img {
         height:0;
       }
       .home-header h2 {
-        margin-top: 30px;
-        font-size: 7pt;
+        margin-top: 20px;
+        font-size: 6pt;
         line-height: 12px;
-        width: 250px;
-        letter-spacing: 1.5pt;
-        font-family: avenir-thin, sans-serif;
-        color: white;
-        margin-left: 15px;
+        width: 115px;
+        letter-spacing: 1.25pt;
+        padding: 12px;
+        font-family: avenir-semi-bold, sans-serif;
+        color: black;
+        margin-left: 10px;
       }
       .other-nav ul {
         visibility: hidden;
@@ -538,6 +553,7 @@ footer img {
         justify-content: center;
         padding: 0px 20px 0px 20px;
       }
+      
       .design-layout p {
         display: block;
         justify-content:left;
@@ -558,6 +574,7 @@ footer img {
         color: #414042;
         line-height: 40pt; 
       }
+
       .design-layout strong {
         font-family: avenir-medium, sans-serif;
         color: #414042;
@@ -623,15 +640,15 @@ footer img {
     .home-header {
     }
     .home-header h2 {
-      margin-top: 100px;
-      font-size: 12pt;
+      margin-top: 70px;
+      font-size: 20pt;
       line-height: 30px;
-      width: 400px;
-      letter-spacing: 3pt;
+      width: 300px;
+      letter-spacing: 1.25pt;
       padding: 12px;
-      font-family: avenir-medium, sans-serif;
-      color: white;
-      margin-left: 25px;
+      font-family: avenir-semi-bold, sans-serif;
+      color: black;
+      margin-left: 10px;
     }
     .other-nav ul {
       visibility: visible;
@@ -741,15 +758,16 @@ footer img {
     .home-nav {
       visibility: visible;
     }
+
     .home-header h2 {
-      margin-top: 250px;
-      font-size: 12pt;
-      line-height: 30px;
-      width: 700px;
-      letter-spacing: 3pt;
+      margin-top: 150px;
+      font-size: 30pt;
+      line-height: 50px;
+      width: 400px;
+      letter-spacing: 1.25pt;
       padding: 12px;
-      font-family: avenir-medium, sans-serif;
-      color: white;
+      font-family: avenir-semi-bold, sans-serif;
+      color: black;
       margin-left: 60px;
     }
     .resume {
