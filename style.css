@@ -1,0 +1,962 @@
+@font-face {
+    font-family: avenir-thin;
+    src: url(fonts/avenir-thin.otf) format("truetype");
+}
+
+@font-face {
+    font-family: avenir;
+    src: url(fonts/avenir.otf) format("truetype");
+}
+
+@font-face {
+    font-family: avenir-semi-bold;
+    src: url(fonts/avenir-semi-bold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: avenir-medium;
+    src: url(fonts/avenir-medium.otf) format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+.bottom-links a {
+text-decoration: underline;
+color: black;
+}
+body {
+    font-family: avenir, sans-serif;
+}
+
+.contact h2 {
+    padding-top: 0;
+    font-family: avenir-thin, sans-serif;
+    font-size: 11pt;
+    color: #414042;
+    text-align: center;
+    position: relative;
+}
+
+.work-container a:hover {
+    color: #6D6E71;
+}
+
+.work-container p {
+  display: flex;
+  justify-content: center;
+  font-family: avenir, sans-serif;
+  font-size: 12pt;
+  margin: auto;
+  color: gray;
+  line-height: 20pt;
+  padding-bottom: 80px;
+}
+.home-header {
+  display: flex;
+  flex-direction:row;
+    position: relative;
+    overflow: hidden;
+}
+
+.other-header {
+
+}
+
+.other-logo {
+    padding: 16px 12px 12px 12px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.home-logo {
+  padding-left: 10px;
+  padding-top: 15px;
+  width: 300px;
+}
+.home-nav a {
+    text-decoration: none;
+    font-family: avenir-medium, sans-serif;
+    font-size: 11pt;
+    color: black;
+}
+
+.home-header h2 {
+  margin-top: 125px;
+  font-size: 70pt;
+  line-height: 70px;
+  width: 400px;
+  letter-spacing: 1.5pt;
+  padding: 12px;
+  font-family: avenir-semi-bold, sans-serif;
+  color: black;
+  margin-left: 60px;
+}
+
+.home-header div {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    grid-template-columns: auto auto;
+    grid-template-rows: min-content auto;
+    grid-template-areas:
+        "logo nav"
+        "tagline tagline";
+}
+.top-stuff {
+}
+.other-header {
+  display: flex;
+  justify-content: space-around;
+}
+.other-header div {
+    grid-template-areas:
+    "logo nav"
+}
+
+.other-header nav ul {
+    display: flex;
+    padding: 12px;
+    justify-content: flex-end;
+}
+
+h1 {
+    font-family: avenir-semi-bold, sans-serif;
+    font-size: 20pt;
+    color: black;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.banner {
+  display:flex;
+  justify-content:space-between;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #414042;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  margin-right:25px;
+  display: flex;
+  flex-direction:row-reverse;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+}
+
+.other-nav a {
+    text-decoration: none;
+    font-family: avenir, sans-serif;
+    font-size: 11pt;
+    color: #414042;
+}
+
+nav ul {
+    display: flex;
+    padding: 12px;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 12px;
+}
+
+.tile-board {
+	column-count: 1;
+	column-gap: 24pt;
+	padding: 24pt;
+}
+
+.tile-board img {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 24pt;
+	border-radius: none;
+}
+
+.grid {
+  margin: 10px;
+}
+
+.grid img {
+  height: 200px;
+  width: auto;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.25);
+}
+
+.outer-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 12pt;
+  padding: 30px 50px 50px 50px;
+}
+
+section h2 {
+    font-family: avenir-semi-bold, sans-serif;
+    font-size: 25pt;
+    letter-spacing: 6pt;
+    margin: 60pt 12pt 12pt 12pt;
+}
+
+section h3 {
+    font-family: avenir-semi-bold, sans-serif;
+    font-size: 14pt;
+    letter-spacing: 3pt;
+    margin: 12pt;
+    color: #414042;
+}
+
+section p {
+    font-family: avenir, sans-serif;
+    font-size: 11pt;
+    margin: 12pt;
+    padding-bottom: 20px;
+    line-height: 20pt;
+    color: #6D6E71;
+}
+
+cite {
+    display: flex;
+    justify-content: center;
+    font-family: avenir-thin, sans-serif;
+    font-size: 12pt;
+    margin: auto;
+    padding: 50px 150px 50px 150px;
+    color: #414042;
+    line-height: 20pt;
+}
+
+blockquote {
+    display: flex;
+    justify-content: center;
+    font-family: avenir, sans-serif;
+    font-size: 14pt;
+    margin: auto;
+    padding: 50px 150px 50px 150px;
+    color: gray;
+    line-height: 20pt;
+}
+
+.design-layout p {
+    display: flex;
+    justify-content: center;
+    font-family: avenir, sans-serif;
+    font-size: 12pt;
+    margin: auto;
+    color: gray;
+    line-height: 20pt;
+}
+
+.design-layout {
+    position: relative;
+}
+
+.design-tile {
+    display: flex;
+    justify-content: center;
+}
+
+.design-tile img {
+    width: 400px;
+    margin: 12pt;
+    padding: 10px;
+}
+
+.design-header {
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+}
+.design-header img {
+    width: 100%;
+    height: 100%;
+}
+
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 225px);
+    grid-template-rows: repeat(2, 225px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+.design-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resume ul {
+    font-family: avenir;
+    font-size: 11pt;
+    margin: 12pt;
+    padding-bottom: 20px;
+    line-height: 20pt;
+    color: #6D6E71;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+}
+
+.compare {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.compare img {
+    max-width: 500px;
+    height: auto;
+}
+
+.compare p {
+    font-size: 40pt;
+    padding: 0px;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 150px 50px 150px;
+}
+
+.work a {
+    text-decoration: underline;
+    color: #414042;
+
+}
+
+.design-layout a:hover {
+  color: #6D6E71;
+}
+
+.work {
+    padding: 10px;
+}
+
+.other-work a {
+    text-decoration: none;
+    color: #6D6E71;
+}
+
+.other-work {
+    text-align: center;
+    padding: 10px 50px 100px 50px;
+    color: #6D6E71;
+    font-family: avenir-thin, sans-serif;
+    font-size: 11pt;
+}
+
+footer {
+    font-family: avenir, sans-serif;
+    color: black;
+    font-size: 11pt;
+    padding: 20px;
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    padding: 10px 5px 20px 5px;
+}
+
+.space-block {
+    padding: 50px;
+}
+
+.container-hover {
+  position: relative;
+  width: 100%;
+  height: inherit;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: 100%;
+  margin-bottom: 35px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-hover:hover .overlay {
+  opacity: .5;
+}
+.container-hover:hover .text-overlay {
+  opacity: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: 100%;
+  margin-bottom: 35px;
+  transition: .5s ease;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  display:flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  /* -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  text-align: center;
+  opacity: 0;
+}
+
+@media only screen and (min-width: 300px) {
+  .tile-board {
+      column-count: 1;
+  }
+      i {
+        visibility: visible;
+      }
+      .home-nav {
+        visibility: hidden;
+        height:0;
+      }
+      .home-header h2 {
+        margin-top: 20px;
+        font-size: 6pt;
+        line-height: 12px;
+        width: 115px;
+        letter-spacing: 1.25pt;
+        padding: 12px;
+        font-family: avenir-semi-bold, sans-serif;
+        color: black;
+        margin-left: 10px;
+      }
+      .other-nav ul {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+      }
+       .resume h2 {
+        font-size: 15pt;
+        padding-bottom: 10px;
+      }
+
+      .resume h3 {
+        line-height: 15pt;
+        font-size: 11pt;
+      }
+      .resume {
+        padding: 0px 20px 0px 20px;
+      }
+
+      .resume p {
+        font-size: 10pt;
+      }
+
+      .home-logo {
+        width: 200px;
+
+      }
+      .design-tile {
+        flex-direction:column-reverse;
+      }
+      .design-tile img {
+        width:85%;
+      }
+      .design-grid {
+        display:flex;
+        flex-direction:column;
+        padding:10px;
+      }
+      .design-grid img {
+        padding-bottom: 10px;
+      }
+      blockquote  {
+        padding: 30px 20px 50px 20px;
+      }
+      cite {
+        padding: 30px 20px 50px 20px;
+      }
+      .compare {
+        flex-direction:column;
+      }
+      .outer-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 12pt;
+        padding: 50px 20px 50px 20px;
+      }
+      .design-header {
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px 0px 20px;
+      }
+      
+      .design-layout p {
+        display: block;
+        justify-content:left;
+        font-family: avenir-thin, sans-serif;
+        font-size: 12pt;
+        margin: auto;
+        padding: 30px 20px 0px 20px;
+        color: #6D6E71;
+        line-height: 30pt;
+      }
+      .design-layout h2 {
+        display: block;
+        justify-content:left;
+        font-family: avenir-medium, sans-serif;
+        font-size: 16pt;
+        margin: auto;
+        padding: 100px 20px 0px 20px;
+        color: #414042;
+        line-height: 40pt; 
+      }
+
+      .design-layout strong {
+        font-family: avenir-medium, sans-serif;
+        color: #414042;
+      }
+      blockquote {
+        display: flex;
+        justify-content: center;
+        font-family: avenir-thin, sans-serif;
+        font-size: 12pt;
+        font-style: italic;
+        margin: auto;
+        padding: 30px 40px 0px 40px;
+        color:#414042;
+        line-height: 40pt;
+    }
+      .design-layout a {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: avenir, sans-serif;
+        font-size: 12pt;
+        margin: auto;
+        padding: 30px 20px 0px 20px;
+        color: #414042;
+        line-height: 40pt;
+      }
+      .design-layout ul {
+        list-style-type: disc;
+        display: block;
+        justify-content:left;
+        font-family: avenir-thin, sans-serif;
+        font-size: 12pt;
+        margin: auto;
+        padding: 30px 40px 0px 60px;
+        color: #6D6E71;
+        line-height: 30pt;
+      }
+}
+
+@media only screen and (min-width: 700px) {
+    .tile-board {
+        column-count: 3;
+    }
+    .tile-board {
+
+    }
+    i {
+      visibility: hidden;
+    }
+    .home-nav {
+      display:flex;
+      visibility: visible;
+      width: 400px;
+      justify-content: space-between;
+    }
+     .home-bar {
+       display: inline;
+    }
+    .home-logo {
+      width: 400px;
+      padding:10px;
+    }
+    .home-header {
+    }
+    .home-header h2 {
+      margin-top: 70px;
+      font-size: 20pt;
+      line-height: 30px;
+      width: 300px;
+      letter-spacing: 1.25pt;
+      padding: 12px;
+      font-family: avenir-semi-bold, sans-serif;
+      color: black;
+      margin-left: 10px;
+    }
+    .other-nav ul {
+      visibility: visible;
+      width: 100%;
+    }
+    .design-tile img {
+      flex-direction:row;
+      width: 90%;
+    }
+    .design-grid {
+      justify-content: center;
+      align-items:center;
+    }
+    .design-grid img{
+      width: 75%;
+    }
+    .resume {
+      padding: 0px 50px 0px 50px;
+    }
+    .compare {
+      flex-direction:row;
+    }
+    .outer-grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 12pt;
+      padding: 50px 100px 50px 100px;
+    }
+    .design-header {
+      display: flex;
+      justify-content: center;
+      padding: 0px 100px 0px 100px;
+    }
+    .design-layout p {
+      display: block;
+      justify-content:left;
+      font-family: avenir-thin, sans-serif;
+      font-size: 12pt;
+      margin: auto;
+      padding: 30px 100px 0px 100px;
+      color: #6D6E71;
+      line-height: 30pt;
+    }
+    .design-layout h2 {
+      display: block;
+      justify-content:left;
+      font-family: avenir-medium, sans-serif;
+      font-size: 16pt;
+      margin: auto;
+      padding: 100px 100px 0px 100px;
+      color: #414042;
+      line-height: 40pt; 
+    }
+    .design-layout strong {
+      font-family: avenir-medium, sans-serif;
+      color: #414042;
+    }
+    blockquote {
+      display: flex;
+      justify-content: center;
+      font-family: avenir-thin, sans-serif;
+      font-size: 12pt;
+      font-style: italic;
+      margin: auto;
+      padding: 30px 150px 0px 150px;
+      color:#414042;
+      line-height: 40pt;
+  }
+    .design-layout a {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-family: avenir, sans-serif;
+      font-size: 12pt;
+      margin: auto;
+      padding: 30px 100px 0px 100px;
+      color: #414042;
+      line-height: 40pt;
+    }
+    .design-layout ul {
+      list-style-type: disc;
+      display: block;
+      justify-content:left;
+      font-family: avenir-thin, sans-serif;
+      font-size: 12pt;
+      margin: auto;
+      padding: 30px 100px 0px 150px;
+      color: #6D6E71;
+      line-height: 30pt;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    .tile-board {
+         column-count: 4;
+    }
+    i {
+      visibility: hidden;
+
+    }
+    .home-logo {
+      width: 450px;
+    }
+    .home-nav {
+      visibility: visible;
+    }
+
+    .home-header h2 {
+      margin-top: 150px;
+      font-size: 30pt;
+      line-height: 50px;
+      width: 400px;
+      letter-spacing: 1.25pt;
+      padding: 12px;
+      font-family: avenir-semi-bold, sans-serif;
+      color: black;
+      margin-left: 60px;
+    }
+    .resume {
+      padding: 0px 150px 0px 150px;
+    }
+    .other-nav ul {
+      visibility: visible;
+    }
+    .design-tile {
+      flex-direction:row;
+    }
+    .design-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 225px);
+        grid-template-rows: repeat(2, 225px);
+        grid-gap: 15px;
+        justify-content: center;
+    }
+    .design-grid img{
+      width: 100%;
+    }
+    .outer-grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 12pt;
+      padding: 50px 150px 50px 150px;
+    }
+    .design-header {
+      display: flex;
+      justify-content: center;
+      padding: 0px 150px 0px 150px;
+    }
+    .design-layout p {
+      display: block;
+      justify-content:left;
+      font-family: avenir-thin, sans-serif;
+      font-size: 12pt;
+      margin: auto;
+      padding: 30px 150px 0px 150px;
+      color: #6D6E71;
+      line-height: 30pt;
+    }
+    .design-layout h2 {
+      display: block;
+      justify-content:left;
+      font-family: avenir-medium, sans-serif;
+      font-size: 16pt;
+      margin: auto;
+      padding: 100px 150px 0px 150px;
+      color: #414042;
+      line-height: 40pt; 
+    }
+    .design-layout strong {
+      font-family: avenir-medium, sans-serif;
+      color: #414042;
+    }
+    blockquote {
+      display: flex;
+      justify-content: center;
+      font-family: avenir-thin, sans-serif;
+      font-size: 12pt;
+      font-style: italic;
+      margin: auto;
+      padding: 30px 175px 0px 175px;
+      color:#414042;
+      line-height: 40pt;
+  }
+    .design-layout a {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-family: avenir, sans-serif;
+      font-size: 12pt;
+      margin: auto;
+      padding: 30px 150px 0px 150px;
+      color: #414042;
+      line-height: 40pt;
+    }
+
+    .design-layout ul {
+      list-style-type: disc;
+      display: block;
+      justify-content:left;
+      font-family: avenir-thin, sans-serif;
+      font-size: 12pt;
+      margin: auto;
+      padding: 30px 150px 0px 200px;
+      color: #6D6E71;
+      line-height: 30pt;
+    }
+}
+
+/* CSS for contact form */
+
+.contact-form {
+    height: 100vh;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 12pt;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0px;
+    font-size: 12pt;
+    border: 1px solid lightgray;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 18pt;
+    border-radius: 8px;
+    font-family: avenir;
+    color: #414042;
+    border: 2px solid #414042;
+    text-align: center;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover {
+    background-color: #414042;
+    color: white;
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: lightgreen;
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: red;
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
